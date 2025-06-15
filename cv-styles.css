@@ -1,0 +1,595 @@
+/* ===============================================
+   CV Page Specific Styles
+   =============================================== */
+
+/* CV Hero Section */
+.cv-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, #0D1117 0%, #161B22 100%);
+}
+
+.cv-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cv-name {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #F0F6FC, #58A6FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.cv-title {
+    font-size: 1.8rem;
+    color: #58A6FF;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.cv-location {
+    font-size: 1.2rem;
+    color: #8B949E;
+    margin-bottom: 2.5rem;
+}
+
+.cv-contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.cv-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(88, 166, 255, 0.1);
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    transition: all 0.3s ease;
+    color: #F0F6FC;
+    text-decoration: none;
+}
+
+.cv-contact-item:hover {
+    background: rgba(88, 166, 255, 0.2);
+    border-color: rgba(88, 166, 255, 0.4);
+    transform: translateY(-2px);
+    color: #F0F6FC;
+}
+
+.cv-contact-icon {
+    font-size: 1.2rem;
+}
+
+.cv-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CV Content Layout */
+.cv-content {
+    padding: 4rem 0;
+    background: #161B22;
+}
+
+.cv-layout {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv-section {
+    margin-bottom: 4rem;
+    background: #0D1117;
+    border-radius: 12px;
+    padding: 3rem;
+    border: 1px solid rgba(88, 166, 255, 0.1);
+}
+
+.cv-section-title {
+    color: #58A6FF;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(88, 166, 255, 0.3);
+    position: relative;
+}
+
+.cv-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #58A6FF;
+}
+
+.cv-section-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Education Section */
+.cv-education-item {
+    border-left: 3px solid #58A6FF;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cv-education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.cv-education-header h3 {
+    color: #F0F6FC;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.cv-date {
+    background: rgba(88, 166, 255, 0.2);
+    color: #58A6FF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.cv-institution {
+    color: #8B949E;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.cv-education-details h4 {
+    color: #58A6FF;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.cv-coursework-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-coursework-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.cv-coursework-list li::before {
+    content: '▶';
+    color: #58A6FF;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Skills Section */
+.cv-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.cv-skill-category {
+    background: rgba(88, 166, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(88, 166, 255, 0.1);
+}
+
+.cv-skill-category h3 {
+    color: #58A6FF;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.cv-skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.cv-skill-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid;
+    transition: all 0.3s ease;
+}
+
+.cv-skill-badge.proficient {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22C55E;
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.cv-skill-badge.intermediate {
+    background: rgba(249, 115, 22, 0.2);
+    color: #F97316;
+    border-color: rgba(249, 115, 22, 0.3);
+}
+
+.cv-skill-badge.beginner {
+    background: rgba(88, 166, 255, 0.2);
+    color: #58A6FF;
+    border-color: rgba(88, 166, 255, 0.3);
+}
+
+.cv-skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+.cv-project-item {
+    border-left: 3px solid #58A6FF;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.cv-project-item::before {
+    content: '●';
+    color: #58A6FF;
+    font-size: 1.2rem;
+    position: absolute;
+    left: -8px;
+    top: 0;
+    background: #0D1117;
+    padding: 0 3px;
+}
+
+.cv-project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.cv-project-header h3 {
+    color: #F0F6FC;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.cv-project-type {
+    background: rgba(88, 166, 255, 0.2);
+    color: #58A6FF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.cv-project-description {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.cv-project-details h4 {
+    color: #58A6FF;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.cv-project-details ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.cv-project-details li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.cv-project-tech {
+    background: rgba(88, 166, 255, 0.1);
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    border-left: 3px solid #58A6FF;
+}
+
+/* Interests & Career Goals */
+.cv-interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cv-interest-item {
+    background: rgba(88, 166, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(88, 166, 255, 0.1);
+}
+
+.cv-interest-item h3 {
+    color: #58A6FF;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.cv-career-goals {
+    background: rgba(88, 166, 255, 0.08);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+}
+
+.cv-career-goals h3 {
+    color: #58A6FF;
+    margin-bottom: 1rem;
+}
+
+/* Personal Interests */
+.cv-personal-interests {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.cv-personal-item {
+    background: rgba(88, 166, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(88, 166, 255, 0.1);
+}
+
+.cv-personal-item h3 {
+    color: #58A6FF;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+/* References */
+.cv-references-note {
+    text-align: center;
+    font-style: italic;
+    color: #8B949E;
+    background: rgba(88, 166, 255, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px dashed rgba(88, 166, 255, 0.2);
+}
+
+/* ===============================================
+   Print Styles
+   =============================================== */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    
+    body {
+        background: white !important;
+        color: #000 !important;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .header, .footer {
+        display: none !important;
+    }
+    
+    .cv-hero {
+        background: white !important;
+        min-height: auto !important;
+        padding: 2rem 0 1rem !important;
+        page-break-after: avoid;
+    }
+    
+    .cv-name {
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        -webkit-text-fill-color: initial !important;
+        color: #000 !important;
+        font-size: 2.5rem !important;
+    }
+    
+    .cv-title {
+        color: #333 !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .cv-location {
+        color: #666 !important;
+    }
+    
+    .cv-contact-links {
+        margin-bottom: 2rem !important;
+    }
+    
+    .cv-contact-item {
+        background: none !important;
+        border: 1px solid #ddd !important;
+        color: #000 !important;
+        padding: 0.5rem 0.8rem !important;
+    }
+    
+    .cv-actions {
+        display: none !important;
+    }
+    
+    .cv-content {
+        background: white !important;
+        padding: 1rem 0 !important;
+    }
+    
+    .cv-section {
+        background: white !important;
+        border: 1px solid #ddd !important;
+        margin-bottom: 2rem !important;
+        padding: 1.5rem !important;
+        page-break-inside: avoid;
+    }
+    
+    .cv-section-title {
+        color: #000 !important;
+        border-bottom: 2px solid #ddd !important;
+        font-size: 1.3rem !important;
+    }
+    
+    .cv-section-title::after {
+        background: #333 !important;
+    }
+    
+    .cv-education-header h3,
+    .cv-project-header h3 {
+        color: #000 !important;
+    }
+    
+    .cv-date,
+    .cv-project-type {
+        background: #f0f0f0 !important;
+        color: #333 !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .cv-institution {
+        color: #666 !important;
+    }
+    
+    .cv-education-details h4,
+    .cv-project-details h4,
+    .cv-skill-category h3,
+    .cv-interest-item h3,
+    .cv-career-goals h3,
+    .cv-personal-item h3 {
+        color: #333 !important;
+    }
+    
+    .cv-coursework-list li::before,
+    .cv-project-item::before {
+        color: #333 !important;
+    }
+    
+    .cv-skill-category,
+    .cv-interest-item,
+    .cv-career-goals,
+    .cv-personal-item {
+        background: #f9f9f9 !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .cv-skill-badge {
+        background: #f0f0f0 !important;
+        color: #333 !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .cv-project-tech {
+        background: #f9f9f9 !important;
+        border-left: 3px solid #333 !important;
+    }
+    
+    .cv-references-note {
+        background: #f9f9f9 !important;
+        border: 2px dashed #ddd !important;
+        color: #666 !important;
+    }
+    
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+    }
+    
+    .cv-layout {
+        max-width: none !important;
+    }
+}
+
+/* ===============================================
+   Responsive Design
+   =============================================== */
+@media (max-width: 768px) {
+    .cv-name {
+        font-size: 2.5rem;
+    }
+    
+    .cv-title {
+        font-size: 1.4rem;
+    }
+    
+    .cv-contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cv-contact-item {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .cv-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cv-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .cv-education-header,
+    .cv-project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cv-date,
+    .cv-project-type {
+        margin-top: 0.5rem;
+    }
+    
+    .cv-skills-grid,
+    .cv-interests-grid,
+    .cv-personal-interests {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-name {
+        font-size: 2rem;
+    }
+    
+    .cv-title {
+        font-size: 1.2rem;
+    }
+    
+    .cv-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .cv-project-item,
+    .cv-education-item {
+        padding-left: 1rem;
+    }
+}
