@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tshepiso Makelana | CS Student & Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html">Tshepiso Makelana</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="hero" style="min-height: 70vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Learning <span class="highlight">Journey</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Sharing insights from my CS studies and project experiences
+                </p>
+                <p class="hero-description">
+                    Welcome to my digital space where I document my learning process, 
+                    share technical insights, and reflect on my journey through computer science.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Coming Soon Section -->
+    <section class="blog-coming-soon" style="padding: 6rem 0;">
+        <div class="container">
+            <div class="blog-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                
+                <!-- Blog Preview Cards -->
+                <div class="blog-preview">
+                    <h2 style="margin-bottom: 3rem; color: #58A6FF;">What's Coming Soon</h2>
+                    
+                    <div class="upcoming-posts" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                        
+                        <div class="post-preview" style="background: #161B22; padding: 2rem; border-radius: 12px; border: 1px solid rgba(88, 166, 255, 0.1); text-align: left;">
+                            <div class="post-meta" style="color: #58A6FF; font-size: 0.9rem; margin-bottom: 1rem;">📐 Algorithms & Data Structures</div>
+                            <h3 style="margin-bottom: 1rem;">Implementing Graph Algorithms: My MetaCity Experience</h3>
+                            <p style="opacity: 0.9; margin-bottom: 1.5rem;">
+                                Deep dive into implementing Dijkstra's algorithm, DFS, and finding strongly connected components 
+                                in my recent university project.
+                            </p>
+                            <div class="post-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Graph Theory</span>
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
+                        </div>
+
+                        <div class="post-preview" style="background: #161B22; padding: 2rem; border-radius: 12px; border: 1px solid rgba(88, 166, 255, 0.1); text-align: left;">
+                            <div class="post-meta" style="color: #58A6FF; font-size: 0.9rem; margin-bottom: 1rem;">🔒 Cybersecurity</div>
+                            <h3 style="margin-bottom: 1rem;">Getting Started with Ethical Hacking</h3>
+                            <p style="opacity: 0.9; margin-bottom: 1.5rem;">
+                                My journey into cybersecurity, resources for beginners, and why I'm passionate 
+                                about red team operations.
+                            </p>
+                            <div class="post-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span class="tech-tag">Cybersecurity</span>
+                                <span class="tech-tag">Ethical Hacking</span>
+                                <span class="tech-tag">Red Team</span>
+                            </div>
+                        </div>
+
+                        <div class="post-preview" style="background: #161B22; padding: 2rem; border-radius: 12px; border: 1px solid rgba(88, 166, 255, 0.1); text-align: left;">
+                            <div class="post-meta" style="color: #58A6FF; font-size: 0.9rem; margin-bottom: 1rem;">🌐 Web Development</div>
+                            <h3 style="margin-bottom: 1rem;">Building APIs from Scratch</h3>
+                            <p style="opacity: 0.9; margin-bottom: 1.5rem;">
+                                Lessons learned while creating a custom API for my e-commerce project, 
+                                including database design and PHP best practices.
+                            </p>
+                            <div class="post-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">API Design</span>
+                            </div>
+                        </div>
+
+                        <div class="post-preview" style="background: #161B22; padding: 2rem; border-radius: 12px; border: 1px solid rgba(88, 166, 255, 0.1); text-align: left;">
+                            <div class="post-meta" style="color: #58A6FF; font-size: 0.9rem; margin-bottom: 1rem;">🤖 AI & Machine Learning</div>
+                            <h3 style="margin-bottom: 1rem;">Practical AI Applications for Students</h3>
+                            <p style="opacity: 0.9; margin-bottom: 1.5rem;">
+                                Exploring real-world applications of machine learning and how CS students 
+                                can start experimenting with AI today.
+                            </p>
+                            <div class="post-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">AI Applications</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Newsletter Signup Placeholder -->
+                    <div class="newsletter-signup" style="background: rgba(88, 166, 255, 0.05); padding: 3rem; border-radius: 12px; border: 2px dashed rgba(88, 166, 255, 0.3);">
+                        <div class="placeholder-icon" style="font-size: 3rem; margin-bottom: 1rem;">📧</div>
+                        <h3 style="margin-bottom: 1rem;">Stay Updated</h3>
+                        <p style="margin-bottom: 2rem; opacity: 0.9;">
+                            Be the first to know when I publish new posts about my CS journey, 
+                            project insights, and tech discoveries.
+                        </p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <a href="index.html#contact" class="btn btn-primary">Get Notified</a>
+                            <a href="index.html" class="btn btn-secondary">Back to Portfolio</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tshepiso Makelana. Built with passion and lots of coffee ☕</p>
+            <p>Computer Science Student | University of Pretoria</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
